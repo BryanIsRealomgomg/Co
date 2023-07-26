@@ -1,0 +1,73 @@
+/* @font-face rule for Lemon Milk font */
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url(lemon-milk.ttf) format('truetype'); /* Update the path to your font file */
+    /* You can add additional src lines for different font formats (e.g., woff, woff2) for better browser compatibility */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS for fading out the elements */
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* CSS for the pixel man video */
+#pixelManVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 200vw; /* Set video width as 200% of the viewport width */
+    max-width: 10ovmax; /* Set maximum width based on 16:9 aspect ratio */
+    height: auto; /* Maintain the video's aspect ratio */
+}
+
+/* Additional styling for the doors */
+.door-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.door {
+    position: absolute;
+}
+
+/* Apply the Lemon Milk font to the body */
+body {
+    font-family: 'Lemon Milk', sans-serif;
+}
+
+/* If you want to apply the font to a specific class or element */
+.custom-element {
+    font-family: 'Lemon Milk', sans-serif;
+}
+
+/* Styling for the centered button with a yellow background */
+.centered-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    /* Add any other additional styles you want for the button */
+}
